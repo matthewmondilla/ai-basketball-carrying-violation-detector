@@ -21,10 +21,10 @@ If the basketball's acceleration is below this threshold, the action is consider
 
 ![Alt text for the image](images/theoretical_framework.png)
 
-Since **acceleration** is the second derivative of position with respect to time, calculating this variable becomes straightforward. 
+Since **acceleration** is the second derivative of position (meters) with respect to time (seconds), calculating this variable becomes straightforward. 
 
 The YOLOv8 model provides the **position vs. time series data** of the basketball, enabling us to derive the acceleration using numerical differentiation techniques.
 
-But first, let's do some data prepartion!
+But first, I have to prepare the necessary and correct data!
 
 [Continue to Part 3: Data Preparation](part3.md)
