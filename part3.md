@@ -14,7 +14,7 @@ Next, I positioned the camera so that it aligns **perpendicular to the direction
 
 ## 3) Testing Depth of Field Compatibility
 
-To test how well the algorithm works at different distances, I assigned specific areas where dribbling scenarios would occur. These areas were chosen to evaluate the algorithm’s **depth of field compatibility**, 
+To test how well the algorithm works at different depths and distances, I assigned areas where dribbling scenarios would occur. These areas were chosen to evaluate the algorithm’s **depth of field compatibility**, 
 
 ensuring it can detect violations whether the basketball is close or far from the camera.
 
@@ -33,6 +33,22 @@ By applying the principles of perspective, I adjusted the calculations to ensure
 >$\textit{y position in meters}= \bigg(\frac{\textit{ball diameter in meters}}{\textit{bounding box height}}\bigg)\cdot \textit{y position in pixels}$
 
 ![Alt text for the image](images/principles_in_perspective.png)
+
+To visualize the importance of using principles in perspective, here is a line plot showcasing a portion of the basketball's position vs. time series data. 
+
+Note that the units are still in pixels.
+
+![Alt text for the image](images/3.2_pos_in_pixels.png)
+
+At this timeframe, I was dribbling **away** from the camera. As you've noticed, the height between **bounces** and **peaks** is getting shorter and shorter.
+
+To reinforce this, we can also look at another plot of the same timeframe showcasing the relationship between the **height of the bounding box in pixels** and **time in seconds**.
+
+![Alt text for the image](images/3.2_height_vs_time.png)
+
+So, using the equation mentioned above, we can plot the basketball's position vs. time series data, but this time, in **meters** instead of **pixels**.
+
+![Alt text for the image](images/3.2_pos_n_meters.png)
 
 Now that I’ve set up the steps to obtain potentially accurate data, there’s still a chance of encountering **dirty data**, which are inconsistent or noisy measurements caused by environmental factors, camera limitations, or even the AI model itself.
 
