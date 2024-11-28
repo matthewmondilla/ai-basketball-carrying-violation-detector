@@ -33,3 +33,9 @@ By applying the principles of perspective, I adjusted the calculations to ensure
 >$\textit{y position in meters}= \bigg(\frac{\textit{ball diameter in meters}}{\textit{bounding box height}}\bigg)\cdot \textit{y position in pixels}$
 
 ![Alt text for the image](images/principles_in_perspective.png)
+
+Now that I’ve set up the steps to obtain potentially accurate data, there’s still a chance of encountering **dirty data**, which are inconsistent or noisy measurements caused by environmental factors, camera limitations, or even the AI model itself.
+
+To address this, in the next part, I’ll discuss the statistical tools I used to clean and refine the **position vs. time series data**.
+
+[Continue to Part 4: Data Cleaning](part4.md)
