@@ -40,7 +40,9 @@ Note that the units are still in pixels.
 
 ![Alt text for the image](images/3.2_pos_in_pixels.png)
 
-At this timeframe, I was dribbling **away** from the camera. As you've noticed, the height between **bounces** and **peaks** is getting shorter and shorter.
+At this point in the video, I was dribbling **away** from the camera. If you’ve noticed, the height between the **bounces** and **peaks** keeps getting shorter and shorter. 
+
+Now, unless I suddenly decided to start dribbling on an uphill slope (spoiler: I didn’t!), this is obviously not an accurate depiction of the basketball’s real-world position.
 
 To reinforce this, we can also look at another plot of the same timeframe showcasing the relationship between the **height of the bounding box in pixels** and **time in seconds**.
 
