@@ -23,7 +23,7 @@ This is where the idea of using AI comes into play, **not as a replacement for r
 
 Interestingly, a similar case study has already been done! Someone else built an AI-based basketball violation detector, but their project focused on **traveling violations**, while mine focuses specifically on **carrying violations**.
 
-Shoutout to [@ayushpai]([https://github.com/AyushPai](https://github.com/ayushpai)) for their incredible work—it was a big inspiration for my project! 
+Shoutout to [@ayushpai](https://github.com/ayushpai) for their incredible work—it was a big inspiration for my project! 
 
 If you’re curious, you can check out their GitHub repository here: https://github.com/ayushpai/AI-Basketball-Referee
 
