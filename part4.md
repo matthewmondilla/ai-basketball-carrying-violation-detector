@@ -19,9 +19,28 @@ I stumbled upon this [resource](https://towardsdatascience.com/the-perfect-way-t
 
 It’s particularly useful because it allows you to adjust the smoothness to align with expected physical behaviors, like the constant acceleration due to gravity.
 
-Still, smoothing alone wasn’t enough. The gaps in my data varied from small to large, so I implemented an **interpolation threshold**. This means that any missing sequence of data points longer than 24 frames was ignored, as they are too sparse to interpolate reliably. 
+Still, smoothing alone wasn’t enough. The gaps in my data varied from small to large, so I implemented an **interpolation threshold**. This means that any missing sequence of data points longer than **24 frames** was ignored, as they are too sparse to interpolate reliably. 
 
-Similarly, small clusters of detected data points surrounded by large gaps were excluded because they didn’t provide enough context to interpolate reliably. By implementing the **interpolation threshold**, we can transform the noisy data as shown in the diagram below.
+Similarly, small clusters of detected data points (shorter than 24 frames) surrounded by large gaps (longer than 24 frames) were excluded because they didn’t provide enough context to interpolate reliably. 
 
-![Alt text for the image](images/limit.png)
+By implementing the **Whittaker-Eilers Smoothing Filter**, along with the **interpolation threshold**, we will get a transformed data as shown in the diagram below.
 
+![Alt text for the image](images/3.2.png)
+
+![Alt text for the image](images/3.3.png)
+
+## MAD Filter For Outliers
+Next, I had to deal with outliers, datapoints that deviate significantly from the expected trajectory of the basketball, often caused by detection errors. But finding the right approach took some trial and error:
+![Alt text for the image](images/outliers.png)
+1. Sliding Window MAD Filter: This filter almost worked but it overdid points near the **bounce data points**.
+![Alt text for the image](images/3.6_a.png)
+2. Global MAD Filter: A sliding window MAD filter, but accounts for the global minimum and maximum data points as thresholds. Thus, it exculded points within the extrema.
+![Alt text for the image](images/3.7a.png)
+3. Modified MAD Filter: This time, instead of calculating directly the moving average of the data points , I modified it to instead calculate the moving average of the datapoints' **first derivative** . However, this also came with problems as it excluded some outliers that are clustsered together.
+![Alt text for the image](images/3.8a.png)
+4. Modified MAD Filter with Threshold: To improve upon the last technique, I added another **threshold technique** where it assumes datapoints between two outliers that are separated not more than **10 frames** as outliers. This time, it finally worked! (dries the sweat from my head).
+![Alt text for the image](images/3.9a.png)   
+
+   
+   
+   
