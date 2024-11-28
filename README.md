@@ -37,7 +37,7 @@ However, detecting where the basketball is is only the first step. To accurately
 
 According to the basketball rulebook, a carrying violation involves a specific sequence of actions that distinguishes it from regular dribbling.
 
-![Alt text for the image](ai-basketball-carrying-violation-detector/blob/main/images/sequence%20of%20actions%20new.png)
+![Alt text for the image](ai-basketball-carrying-violation-detector/blob/main/images/sequence_of_actions.png)
 
 
 
