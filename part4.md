@@ -65,7 +65,7 @@ To improve upon the last technique, I added another **threshold** which assumes 
 
 With the data cleaning process complete, we now have a reliable and refined dataset ready for analysis. Now, it’s time to move on to the next part: applying **numerical differentiation techniques** to calculate the basketball's acceleration. In other words, let’s dive into data analysis!
 
-[Continue to Part 4: Data Analysis](part4.md)
+[Continue to Part 5: Data Analysis](part5.md)
 
    
    
