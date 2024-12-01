@@ -38,7 +38,7 @@ Next, I had to deal with outliers, data points that deviate significantly from t
 ![Alt text for the image](images/3.7a.png)
 3. Modified MAD Filter: This time, instead of calculating directly the moving average of the data points, I modified it to calculate the moving average of the data points' **first derivative**. However, this also came with problems as it excluded some outliers that were clustered together.
 ![Alt text for the image](images/3.8a.png)
-4. Modified MAD Filter with Threshold: To improve upon the last technique, I added another **threshold technique** which assumes data points between two outliers that are separated not more than **10 frames** as outliers. This time, it finally worked! (dries the sweat from my head).
+4. Modified MAD Filter with Threshold: To improve upon the last technique, I added another **threshold technique** which assumes data points between two outliers that are separated not more than **10 frames** as outliers. This time, it finally worked! 
 ![Alt text for the image](images/3.9a.png)   
 
    
