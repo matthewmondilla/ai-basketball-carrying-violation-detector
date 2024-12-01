@@ -25,6 +25,6 @@ Since **acceleration** is the second derivative of position (meters) with respec
 
 The YOLOv8 model provides the **position vs. time series data** of the basketball, enabling us to derive the acceleration using numerical differentiation techniques.
 
-But first, I have to prepare the necessary and correct data!
+Next, we'll prepare the necessary and correct data!
 
 [Continue to Part 3: Data Preparation](part3.md)
