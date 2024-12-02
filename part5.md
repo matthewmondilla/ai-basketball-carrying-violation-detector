@@ -20,6 +20,6 @@ Once the data was segmented, I applied quadratic regression to each segment. Why
 
 ![Alt text for the image](images/3.14.png)
 
-With this, we can assess whether the theoretical framework I proposed in this project is valid. Specifically, we can determine if the action is a carry or a dribble based on the calculated acceleration: greater than -9.8 m/s² for carrying, and less than -9.8 m/s² for dribbling.
+With this, we can assess whether the theoretical framework I proposed in this project is valid. Specifically, I hypothesized that we can determine if the action is a carry or a dribble based on the calculated acceleration: greater than -9.8 m/s² for carrying, and less than -9.8 m/s² for dribbling.
 
 [Continue to Part 6: Data Validation](part6.md)
